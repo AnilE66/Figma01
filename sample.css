@@ -1,0 +1,33 @@
+
+:root {
+    --primary-color: #0057ff;
+    --secondary-color: #ff9800;
+    --font-family: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+}
+ 
+ 
+.btn {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
